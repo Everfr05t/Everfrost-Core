@@ -12,9 +12,11 @@ $finder = Finder::create()
     ]);
 
 return (new Config())
-    ->setRiskyAllowed(false)
+    ->setRiskyAllowed(true)
     ->setRules([
         '@PER-CS' => true,
-        'declare_strict_types' => true,
+        'declare_strict_types' => [
+            'strategy' => 'enforce',
+        ],
     ])
     ->setFinder($finder);

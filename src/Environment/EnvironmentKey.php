@@ -8,7 +8,7 @@ use InvalidArgumentException;
 
 final readonly class EnvironmentKey
 {
-    private const string PATTERN = '/^[a-z][a-z0-9-]*$/D';
+    private const string PATTERN = '/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/D';
 
     public function __construct(private string $value)
     {

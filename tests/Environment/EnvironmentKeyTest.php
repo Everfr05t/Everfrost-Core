@@ -57,5 +57,7 @@ final class EnvironmentKeyTest extends TestCase
         yield 'underscore' => ['pre_production'];
         yield 'space' => ['pre production'];
         yield 'starts with hyphen' => ['-production'];
+        yield 'ends with hyphen' => ['production-'];
+        yield 'double hyphen' => ['pre--production'];
     }
 }

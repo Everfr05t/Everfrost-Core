@@ -23,7 +23,7 @@ final class CapabilityTest extends TestCase
         self::assertSame('database.mysql.dump', $capability->value());
     }
 
-    public function testCapabilitiesWithTheSameValueAreEquals(): void
+    public function testCapabilitiesWithTheSameValueAreEqual(): void
     {
         $capability = new Capability('deploy.files');
         $other = new Capability('deploy.files');

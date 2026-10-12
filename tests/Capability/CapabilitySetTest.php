@@ -35,7 +35,7 @@ final class CapabilitySetTest extends TestCase
         self::assertTrue($capabilities->hasAll(new Capability("deploy.files"), new Capability("deploy.git")));
     }
 
-    public function testHasAllReturnFalseWhenOneCapabilityIsMissing(): void
+    public function testHasAllReturnsFalseWhenOneCapabilityIsMissing(): void
     {
         $capabilities = new CapabilitySet(new Capability("deploy.files"));
         self::assertFalse($capabilities->hasAll(new Capability("deploy.files"), new Capability("deploy.docker")));
@@ -47,7 +47,7 @@ final class CapabilitySetTest extends TestCase
         self::assertCount(1, $capabilities->all());
     }
 
-    public function testItReturnAllCapabilities(): void
+    public function testItReturnsAllCapabilities(): void
     {
         $deployFiles = new Capability("deploy.files");
         $monitoringHttp = new Capability("monitoring.http");

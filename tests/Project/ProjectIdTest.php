@@ -21,7 +21,7 @@ final class ProjectIdTest extends TestCase
         self::assertTrue((new ProjectId("project_123"))->equals(new ProjectId("project_123")));
     }
 
-    public function testIdentifiersWithDifferentsValuesAreNotEqual(): void
+    public function testIdentifiersWithDifferentValuesAreNotEqual(): void
     {
         self::assertFalse((new ProjectId("project_123"))->equals(new ProjectId("project_456")));
     }

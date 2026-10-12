@@ -8,12 +8,11 @@ use Everfrost\Core\Environment\EnvironmentId;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
-class EnvironmentIdTest extends TestCase
+final class EnvironmentIdTest extends TestCase
 {
     public function testItStoresAValidIdentifier(): void
     {
-        $id = new EnvironmentId("env_123");
-        self::assertSame('env_123', $id->value());
+        self::assertSame('env_123', new EnvironmentId("env_123")->value());
     }
 
     public function testIdentifiersWithTheSameValueAreEqual(): void

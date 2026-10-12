@@ -4,9 +4,14 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
+
   pull_request:
     branches:
       - main
+
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -31,6 +36,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
+          extensions: dom, mbstring, xml, xmlwriter
           tools: composer:v2
           coverage: none
 
@@ -38,7 +44,7 @@ jobs:
         run: composer validate --strict
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+        run: composer install --prefer-dist --no-interaction --no-progress
 
       - name: Run tests
         run: composer test

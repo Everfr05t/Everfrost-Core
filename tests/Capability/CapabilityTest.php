@@ -31,7 +31,7 @@ final class CapabilityTest extends TestCase
         self::assertTrue($capability->equals($other));
     }
 
-    public function testCapabilitiesWithDifferentValueAreNotEquals(): void
+    public function testCapabilitiesWithDifferentValuesAreNotEqual(): void
     {
         $capability = new Capability('deploy.files');
         $other = new Capability('deploy.docker');

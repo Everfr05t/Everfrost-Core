@@ -30,7 +30,7 @@ final class InfrastructureTest extends TestCase
         self::assertTrue($infrastructure->supports(new Capability('deploy.docker')));
     }
 
-    public function testItDoesNotSupportAnUnknowCapability(): void
+    public function testItDoesNotSupportAnUnknownCapability(): void
     {
         $infrastructure = new Infrastructure(new InfrastructureId('infra_123'), 'OVH Production', new CapabilitySet(new Capability('deploy.files')));
         self::assertFalse($infrastructure->supports(new Capability('deploy.docker')));

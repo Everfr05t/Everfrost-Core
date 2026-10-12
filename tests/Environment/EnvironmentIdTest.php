@@ -25,7 +25,7 @@ final class EnvironmentIdTest extends TestCase
         self::assertFalse(new EnvironmentId('env_123')->equals(new EnvironmentId('env_456')));
     }
 
-    public function testItRejectAnEmptyIdentifier(): void
+    public function testItRejectsAnEmptyIdentifier(): void
     {
         $this->expectException(InvalidArgumentException::class);
         $id = new EnvironmentId('');

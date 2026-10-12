@@ -23,7 +23,7 @@ final class CapabilitySetTest extends TestCase
         self::assertTrue($capabilities->has(new Capability("deploy.files")));
     }
 
-    public function testItDoesNotContainAnUnkownCapability(): void
+    public function testItDoesNotContainAnUnknownCapability(): void
     {
         $capabilities = new CapabilitySet(new Capability("deploy.files"));
         self::assertFalse($capabilities->has(new Capability("deploy.docker")));

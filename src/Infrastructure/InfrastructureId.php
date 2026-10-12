@@ -11,7 +11,7 @@ final readonly class InfrastructureId
     public function __construct(private string $value)
     {
         if ($value === "" || trim($value) !== $value) {
-            throw new InvalidArgumentException("Infrastructure Identifier must be a non-empty string without surrounding whitespace");
+            throw new InvalidArgumentException('Infrastructure Identifier must be a non-empty string without surrounding whitespace');
         }
     }
 
@@ -20,7 +20,7 @@ final readonly class InfrastructureId
         return $this->value;
     }
 
-    public function equals(InfrastructureId $other): bool
+    public function equals(self $other): bool
     {
         return $this->value === $other->value;
     }

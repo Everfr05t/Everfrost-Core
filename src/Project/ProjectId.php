@@ -11,7 +11,7 @@ final readonly class ProjectId
     public function __construct(private string $value)
     {
         if ($value === "" || trim($value) !== $value) {
-            throw new InvalidArgumentException("Project Identifier must be a non-empty string without surrounding whitespace.");
+            throw new InvalidArgumentException('Project Identifier must be a non-empty string without surrounding whitespace.');
         }
     }
 

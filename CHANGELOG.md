@@ -20,6 +20,7 @@ First stable release of Everfrost Core.
 - PHPUnit test suite.
 - PHPStan level 10 static analysis.
 - PER-CS coding standards.
+- Released under the Mozilla Public License 2.0.
 
 ### Architecture
 

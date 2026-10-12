@@ -45,6 +45,12 @@ ecosystem.
 
 See [CHANGELOG.md](CHANGELOG.md) for release history.
 
+## License
+
+Everfrost Core is licensed under the Mozilla Public License 2.0.
+
+See [LICENSE](LICENSE) for details.
+
 ## Requirements
 
 - PHP 8.4+

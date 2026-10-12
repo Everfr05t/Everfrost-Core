@@ -42,5 +42,38 @@ Application orchestration belongs to Everfrost Platform.
 
 Install dependencies:
 
+Install dependencies:
+
 ```bash
 composer install
+```
+
+Run tests:
+
+```bash
+composer test
+```
+
+Run static analysis:
+
+```bash
+composer analyse
+```
+
+Check coding standards:
+
+```bash
+composer lint
+```
+
+Run all checks:
+
+```bash
+composer check
+```
+
+Automatically fix coding-style issues:
+
+```bash
+composer fix
+```

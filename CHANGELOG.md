@@ -5,6 +5,22 @@ All notable changes to Everfrost Core will be documented in this file.
 Everfrost Core follows semantic versioning. Stable releases may also receive a
 codename within the Everfrost theme.
 
+## [1.0.1] - Iceheart - 2026-10-13
+
+Maintenance release preparing Everfrost Core for public Composer distribution.
+
+### Changed
+
+- Improved Composer package metadata.
+- Added Packagist-oriented package keywords.
+- Added Composer installation instructions to the README.
+- Optimized Git archive exports for Composer distributions.
+
+### Fixed
+
+- Corrected the package license metadata to Mozilla Public License 2.0.
+- Added the missing MPL-2.0 license file to the public release.
+
 ## [1.0.0] - Iceheart - 2026-10-12
 
 First stable release of Everfrost Core.
